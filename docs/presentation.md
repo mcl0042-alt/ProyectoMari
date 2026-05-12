@@ -24,7 +24,25 @@
 - **Merge**: Successfully merged `feature-update` into `main` after verifying the new functionality.
 - **Command**: `git merge feature-update`
 
-### 5. Final Result
+### 5. Terminal Logs (Evidence)
+```bash
+# Repository Initialization
+git init
+git add .
+git commit -m "Initial commit: Setup project structure and Task Manager app"
+
+# Feature Branching
+git checkout -b feature-update
+# [Modified app/index.html]
+git add .
+git commit -m "Feature: Add developer credits to footer"
+
+# Merging
+git checkout main
+git merge feature-update
+```
+
+### 6. Final Result
 - **Functional App**: A modern, glassmorphic Task Manager with persistent storage.
 - **Documentation**: A complete Git Cheat Sheet and professional README.
 - **Live Link**: [GitHub Pages Link Placeholder]
