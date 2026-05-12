@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenTask - AI Assisted Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="glass-container">
+        <header>
+            <h1>ZenTask</h1>
+            <p class="subtitle">Focus on what matters</p>
+        </header>
+
+        <main>
+            <div class="input-group">
+                <input type="text" id="taskInput" placeholder="Add a new task..." autocomplete="off">
+                <button id="addTaskBtn">Add Task</button>
+            </div>
+
+            <ul id="taskList">
+                <!-- Tasks will appear here -->
+            </ul>
+
+            <div class="footer-actions">
+                <span id="taskCount">0 tasks remaining</span>
+                <button id="clearAllBtn" class="secondary-btn">Clear All</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>Developed with AI Assistance</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
