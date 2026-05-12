@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Cheat Sheet - ZenTask</title>
+    <style>
+        :root {
+            --primary: #6366f1;
+            --bg: #f1f5f9;
+            --card: #ffffff;
+            --text: #1e293b;
+        }
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            padding: 40px;
+            margin: 0;
+        }
+        .sheet {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: var(--card);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
+        }
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        h1 { margin: 0; color: var(--primary); font-size: 28px; text-transform: uppercase; letter-spacing: 2px; }
+        p.subtitle { color: #64748b; margin: 5px 0 0 0; }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .category {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+        }
+        h2 { font-size: 16px; color: var(--primary); margin-top: 0; border-bottom: 1px solid #e2e8f0; padding-bottom: 10px; }
+        
+        .command-item {
+            margin-bottom: 12px;
+        }
+        .cmd {
+            font-family: 'Cascadia Code', monospace;
+            background: #e2e8f0;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 4px;
+            font-size: 13px;
+        }
+        .desc { font-size: 13px; color: #475569; display: block; }
+        
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 11px;
+            color: #94a3b8;
+        }
+        
+        @media print {
+            body { padding: 0; background: white; }
+            .sheet { box-shadow: none; border: 1px solid #eee; }
+            .category { background: white; border: 1px solid #eee; }
+        }
+    </style>
+</head>
+<body>
+    <div class="sheet">
+        <header>
+            <h1>Hoja de Referencia de Git</h1>
+            <p class="subtitle">Comandos esenciales para el Proyecto ZenTask & Más</p>
+        </header>
+
+        <div class="grid">
+            <div class="category">
+                <h2>📁 Configuración e Inicio</h2>
+                <div class="command-item">
+                    <span class="cmd">git init</span>
+                    <span class="desc">Inicializa un nuevo repositorio Git en la carpeta actual.</span>
+                </div>
+                <div class="command-item">
+                    <span class="cmd">git clone [url]</span>
+                    <span class="desc">Descarga un proyecto existente desde un servidor (GitHub).</span>
+                </div>
+                <div class="command-item">
+                    <span class="cmd">git status</span>
+                    <span class="desc">Muestra el estado de los archivos (nuevos, modificados, etc).</span>
+                </div>
+            </div>
+
+            <div class="category">
+                <h2>💾 Guardando Cambios</h2>
+                <div class="command-item">
+                    <span class="cmd">git add [archivo]</span>
+                    <span class="desc">Prepara un archivo para el siguiente commit (Staging).</span>
+                </div>
+                <div class="command-item">
+                    <span class="cmd">git add .</span>
+                    <span class="desc">Prepara TODOS los archivos modificados.</span>
+                </div>
+                <div class="command-item">
+                    <span class="cmd">git commit -m "mensaje"</span>
+                    <span class="desc">Crea un punto de control con una descripción de los cambios.</span>
+                </div>
+            </div>
+
+            <div class="category">
+                <h2>🌿 Ramas (Branching)</h2>
+                <div class="command-item">
+                    <span class="cmd">git branch</span>
+                    <span class="desc">Lista todas las ramas disponibles en el repositorio.</span>
+                </div>
+                <div class="command-item">
+                    <span class="cmd">git checkout -b [nombre]</span>
+                    <span class="desc">Crea una rama nueva y salta a ella inmediatamente.</span>
+                </div>
+                <div class="command-item">
+                    <span class="cmd">git checkout [nombre]</span>
+                    <span class="desc">Cambia entre ramas existentes.</span>
+                </div>
+                <div class="command-item">
+                    <span class="cmd">git merge [nombre]</span>
+                    <span class="desc">Une los cambios de la rama [nombre] a la rama actual.</span>
+                </div>
+            </div>
+
+            <div class="category">
+                <h2>🔍 Historial y Utilidades</h2>
+                <div class="command-item">
+                    <span class="cmd">git log --oneline</span>
+                    <span class="desc">Lista los commits en una sola línea para mayor claridad.</span>
+                </div>
+                <div class="command-item">
+                    <span class="cmd">git log --graph --all</span>
+                    <span class="desc">Muestra el árbol visual de todas las ramas y commits.</span>
+                </div>
+                <div class="command-item">
+                    <span class="cmd">tree /f</span>
+                    <span class="desc">Muestra la estructura de archivos en consola (Windows).</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            Diseñado para Manuel - Curso de IA y Git Mastery 2026
+        </div>
+    </div>
+</body>
+</html>

@@ -1,31 +1,25 @@
-# Git Mastery - Cheat Sheet
+# Git Cheat Sheet: ZenTask Reference
 
-A quick-start guide to the essential Git commands used in this project.
+## 🚀 Getting Started
+- `git init`: Initialize a new local repository.
+- `git clone <url>`: Download a project from GitHub.
+- `git status`: Check current status of files.
 
-## 1. Repository Setup
-- `git init`: Initialize a new local Git repository.
-- `git clone <url>`: Copy a remote repository to your local machine.
+## 💾 Saving Progress
+- `git add <file>`: Stage specific changes.
+- `git add .`: Stage all changes in current directory.
+- `git commit -m "Message"`: Save staged changes with a description.
 
-## 2. Tracking Changes
-- `git status`: Check the state of the working directory and staging area.
-- `git add <file>`: Add a specific file to the staging area.
-- `git add .`: Add all changes in the current directory to staging.
-- `git commit -m "message"`: Save staged changes with a descriptive message.
-
-## 3. Branching & Merging
-- `git branch`: List all local branches.
-- `git checkout -b <name>`: Create a new branch and switch to it.
+## 🌿 Branch Management
+- `git branch`: List all branches.
+- `git checkout -b <name>`: Create and switch to a new branch.
 - `git checkout <name>`: Switch to an existing branch.
-- `git merge <name>`: Merge the specified branch into the current branch.
+- `git merge <name>`: Combine changes from `<name>` into current branch.
 
-## 4. Remote Collaboration
-- `git remote add origin <url>`: Link your local repository to a remote GitHub repo.
-- `git push -u origin <branch>`: Upload local commits to the remote repository.
-- `git pull`: Fetch and integrate changes from the remote repository.
-
-## 5. Inspection & Debugging
-- `git log`: View the commit history.
-- `git diff`: Show changes between commits, commit and working tree, etc.
+## 🔍 Exploration & History
+- `git log --oneline`: View condensed commit history.
+- `git log --graph --all --oneline`: View visual tree of all branches.
+- `tree /f`: Display folder hierarchy (Windows).
 
 ---
-*Created for the AI-Assisted Development & Git Mastery Assignment.*
+*Created for Manuel - AI & Git Mastery*
