@@ -33,15 +33,14 @@ ZenTask is a modern, web-based task management application developed as part of 
 
 ### 🌐 Project Portal
 The entry point of the project, designed with glassmorphism and modern UI principles.
-![ZenTask Portal](assets/portal.png)
 
 ### 🚀 Task Manager Application
 The core application where users can manage their tasks with persistent storage.
-![ZenTask App](assets/app.png)
+
 
 ### 💻 Git Console Evidence
 Visual proof of the Git workflow, showing the graph, commits, and branch history.
-![Git Evidence](assets/terminal.png)
+!
 
 ## 🛠️ Technical Stack
 - **Structure**: HTML5 Semantic markup.
@@ -61,4 +60,4 @@ Visual proof of the Git workflow, showing the graph, commits, and branch history
 - **GitHub Pages**: [Link to Live Site]
 
 ---
-*Created with ❤️ and AI.*
+*FOR MARI CARMEN ❤️ and AI.*
