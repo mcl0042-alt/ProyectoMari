@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
             --card: #ffffff;
             --text: #1e293b;
         }
+
         body {
             font-family: 'Inter', system-ui, sans-serif;
             background: var(--bg);
@@ -18,40 +20,61 @@
             padding: 40px;
             margin: 0;
         }
+
         .sheet {
             max-width: 1000px;
             margin: 0 auto;
             background: var(--card);
             padding: 40px;
             border-radius: 16px;
-            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
         }
+
         header {
             text-align: center;
             border-bottom: 2px solid var(--primary);
             padding-bottom: 20px;
             margin-bottom: 30px;
         }
-        h1 { margin: 0; color: var(--primary); font-size: 28px; text-transform: uppercase; letter-spacing: 2px; }
-        p.subtitle { color: #64748b; margin: 5px 0 0 0; }
-        
+
+        h1 {
+            margin: 0;
+            color: var(--primary);
+            font-size: 28px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        p.subtitle {
+            color: #64748b;
+            margin: 5px 0 0 0;
+        }
+
         .grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 20px;
         }
-        
+
         .category {
             background: #f8fafc;
             padding: 20px;
             border-radius: 12px;
             border: 1px solid #e2e8f0;
         }
-        h2 { font-size: 16px; color: var(--primary); margin-top: 0; border-bottom: 1px solid #e2e8f0; padding-bottom: 10px; }
-        
+
+        h2 {
+            font-size: 16px;
+            color: var(--primary);
+            margin-top: 0;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 10px;
+        }
+
         .command-item {
             margin-bottom: 12px;
         }
+
         .cmd {
             font-family: 'Cascadia Code', monospace;
             background: #e2e8f0;
@@ -62,22 +85,39 @@
             margin-bottom: 4px;
             font-size: 13px;
         }
-        .desc { font-size: 13px; color: #475569; display: block; }
-        
+
+        .desc {
+            font-size: 13px;
+            color: #475569;
+            display: block;
+        }
+
         .footer {
             margin-top: 30px;
             text-align: center;
             font-size: 11px;
             color: #94a3b8;
         }
-        
+
         @media print {
-            body { padding: 0; background: white; }
-            .sheet { box-shadow: none; border: 1px solid #eee; }
-            .category { background: white; border: 1px solid #eee; }
+            body {
+                padding: 0;
+                background: white;
+            }
+
+            .sheet {
+                box-shadow: none;
+                border: 1px solid #eee;
+            }
+
+            .category {
+                background: white;
+                border: 1px solid #eee;
+            }
         }
     </style>
 </head>
+
 <body>
     <div class="sheet">
         <header>
@@ -160,4 +200,5 @@
         </div>
     </div>
 </body>
+
 </html>
